@@ -1,0 +1,21 @@
+{
+  "roblox_horns.config.title": "Рога из Roblox",
+  "roblox_horns.config.horns": "Рога",
+  "roblox_horns.config.fire": "Огонь",
+  "roblox_horns.config.intensity": "Сила огня",
+  "roblox_horns.config.scale": "Размер рогов",
+  "roblox_horns.config.first_person": "Огонь от первого лица",
+  "roblox_horns.config.others": "Показывать на других игроках",
+  "roblox_horns.horn.none": "Нет",
+  "roblox_horns.horn.toxic": "Токсичные (зелёный/фиолетовый)",
+  "roblox_horns.horn.frost": "Ледяные (синий)",
+  "roblox_horns.horn.inferno": "Огненные (красный/оранжевый)",
+  "roblox_horns.fire.auto": "Как у рогов",
+  "roblox_horns.fire.none": "Без огня",
+  "roblox_horns.fire.orange": "Оранжевый огонь",
+  "roblox_horns.fire.blue": "Синий огонь",
+  "roblox_horns.fire.green": "Зелёный огонь",
+  "roblox_horns.fire.purple": "Фиолетовый огонь",
+  "roblox_horns.fire.white": "Белые искры",
+  "roblox_horns.fire.rainbow": "Радужный огонь"
+}
