@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "roblox_horns",
+  "version": "${version}",
+  "name": "Roblox Horns",
+  "description": "Рога из Roblox с огнём: 3 вида рогов и разные виды огня. Настройки - через Mod Menu.",
+  "authors": ["You"],
+  "license": "MIT",
+  "icon": "assets/roblox_horns/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.robloxhorns.client.RobloxHornsClient"],
+    "modmenu": ["com.example.robloxhorns.client.HornsModMenuApi"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}

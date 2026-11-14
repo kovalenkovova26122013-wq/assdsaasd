@@ -1,0 +1,21 @@
+{
+  "roblox_horns.config.title": "Roblox Horns",
+  "roblox_horns.config.horns": "Horns",
+  "roblox_horns.config.fire": "Fire",
+  "roblox_horns.config.intensity": "Fire intensity",
+  "roblox_horns.config.scale": "Horn size",
+  "roblox_horns.config.first_person": "Fire in first person",
+  "roblox_horns.config.others": "Show on other players",
+  "roblox_horns.horn.none": "None",
+  "roblox_horns.horn.toxic": "Toxic (green/purple)",
+  "roblox_horns.horn.frost": "Frost (blue)",
+  "roblox_horns.horn.inferno": "Inferno (red/orange)",
+  "roblox_horns.fire.auto": "Match horns",
+  "roblox_horns.fire.none": "No fire",
+  "roblox_horns.fire.orange": "Orange fire",
+  "roblox_horns.fire.blue": "Blue fire",
+  "roblox_horns.fire.green": "Green fire",
+  "roblox_horns.fire.purple": "Purple fire",
+  "roblox_horns.fire.white": "White sparks",
+  "roblox_horns.fire.rainbow": "Rainbow fire"
+}

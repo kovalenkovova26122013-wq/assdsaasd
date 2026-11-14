@@ -1,0 +1,14 @@
+-proc:none
+-d
+/tmp/out
+-Xmaxerrs
+500
+src/main/java/com/example/robloxhorns/client/FireStyle.java
+src/main/java/com/example/robloxhorns/client/HornStyle.java
+src/main/java/com/example/robloxhorns/client/HornsConfig.java
+src/main/java/com/example/robloxhorns/client/HornsConfigScreen.java
+src/main/java/com/example/robloxhorns/client/HornsFeatureRenderer.java
+src/main/java/com/example/robloxhorns/client/HornsFire.java
+src/main/java/com/example/robloxhorns/client/HornsModMenuApi.java
+src/main/java/com/example/robloxhorns/client/HornsModel.java
+src/main/java/com/example/robloxhorns/client/RobloxHornsClient.java
