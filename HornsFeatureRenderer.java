@@ -3,7 +3,6 @@ package com.example.robloxhorns.client;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.render.OverlayTexture;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.command.OrderedRenderCommandQueue;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.feature.FeatureRenderer;
@@ -25,8 +24,7 @@ public class HornsFeatureRenderer extends FeatureRenderer<PlayerEntityRenderStat
     @Override
     public void render(MatrixStack matrices, OrderedRenderCommandQueue queue, int light,
                        PlayerEntityRenderState state, float limbAngle, float limbDistance) {
-       int titleW = this.textRenderer.getWidth(this.title);
-this.addDrawableChild(new TextWidget(this.width / 2 - titleW / 2, y - 24, titleW, 14, this.title, this.textRenderer));
+        HornsConfig cfg = HornsConfig.get();
         if (cfg.horns == HornStyle.NONE || state.invisible) {
             return;
         }
@@ -35,21 +33,18 @@ this.addDrawableChild(new TextWidget(this.width / 2 - titleW / 2, y - 24, titleW
         }
 
         matrices.push();
-        // Привязываем к голове (учитывает наклон/поворот головы, приседание и т.д.)
-      getHead().applyTransform(matrices);
-        // Масштаб относительно верха головы, чтобы рога не отрывались от неё
+        this.getContextModel().getHead().applyTransform(matrices);
         float s = cfg.hornScale;
         matrices.translate(0.0f, -0.5f, 0.0f);
         matrices.scale(s, s, s);
         matrices.translate(0.0f, 0.5f, 0.0f);
 
         queue.submitModel(this.model, state, matrices,
-               this.model.getLayer(cfg.horns.texture)
+                this.model.getLayer(cfg.horns.texture),
                 light, OverlayTexture.DEFAULT_UV, 0, null);
         matrices.pop();
     }
 
-    /** Рендер-стейт не знает, чей он, поэтому сравниваем позицию с позицией локального игрока. */
     private static boolean isLocalPlayer(PlayerEntityRenderState state) {
         ClientPlayerEntity me = MinecraftClient.getInstance().player;
         if (me == null) {
