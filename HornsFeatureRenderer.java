@@ -35,7 +35,7 @@ public class HornsFeatureRenderer extends FeatureRenderer<PlayerEntityRenderStat
         matrices.push();
         this.getContextModel().getHead().applyTransform(matrices);
         float s = cfg.hornScale;
-        matrices.translate(0.0f, -0.5f, 0.0f);
+        getHead().applyTransform(matrices);
         matrices.scale(s, s, s);
         matrices.translate(0.0f, 0.5f, 0.0f);
 
